@@ -1,0 +1,19 @@
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\bin\Debug\Submission of Applications_Toshmatov.exe.config
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\bin\Debug\Submission of Applications_Toshmatov.exe
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\bin\Debug\Submission of Applications_Toshmatov.pdb
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.csproj.AssemblyReference.cache
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\MainWindow.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Statement.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\App.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov_MarkupCompile.cache
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov_MarkupCompile.lref
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\MainWindow.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Statement.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.g.resources
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission_of_Applications_Toshmatov.Properties.Resources.resources
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.csproj.GenerateResource.cache
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.csproj.CoreCompileInputs.cache
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.exe
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.pdb
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Education.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Education.g.cs

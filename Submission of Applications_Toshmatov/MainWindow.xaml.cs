@@ -21,8 +21,23 @@ namespace Submission_of_Applications_Toshmatov
         public MainWindow()
         {
             InitializeComponent();
-            // Здесь можно использовать frame для навигации
-            // frame.Navigate(new YourPage());
+
+            frame.Navigate(new Pages.Statement());
+        }
+
+        public enum PageType
+        {
+            Statement
+        }
+
+        public void OpenPages(PageType page)
+        {
+            switch (page)
+            {
+                case PageType.Statement:
+                    frame.Navigate(new Pages.Statement());
+                    break;
+            }
         }
     }
 }

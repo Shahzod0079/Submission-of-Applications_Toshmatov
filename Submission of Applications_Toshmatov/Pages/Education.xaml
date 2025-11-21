@@ -1,0 +1,56 @@
+﻿<Page x:Class="Submission_of_Applications_Toshmatov.Pages.Education"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Education">
+
+    <Grid Background="#F8F9FA">
+        <!-- Шапка -->
+        <Grid Margin="0,0,0,500" Background="White">
+            <Image HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\Pages\Логотип_Пермский_авиационный_техникум.png"/>
+            <Label Content="Подача заявлений" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" FontSize="12"/>
+        </Grid>
+
+        <Grid Margin="10,100,10,10">
+            <Label Content="Сведения об образовании" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+
+            <Label Content="База:" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+            <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Margin="20,65,0,0" VerticalAlignment="Top" FontSize="10" Foreground="Red"/>
+
+            <RadioButton x:Name="rb9Class" Content="9 классов" HorizontalAlignment="Left" Margin="25,90,0,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rb11Class" Content="11 классов" HorizontalAlignment="Left" Margin="25,115,0,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rbSPO" Content="СПО" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+            <RadioButton x:Name="rbVPO" Content="ВПО" HorizontalAlignment="Left" Margin="25,165,0,0" VerticalAlignment="Top" GroupName="EducationBase"/>
+
+            <!-- Тип документа -->
+            <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Margin="20,195,0,0" VerticalAlignment="Top" FontSize="10" Foreground="Red"/>
+
+            <RadioButton x:Name="rbAttestat" Content="Аттестат" HorizontalAlignment="Left" Margin="25,220,0,0" VerticalAlignment="Top" GroupName="DocumentType"/>
+            <RadioButton x:Name="rbDiplom" Content="Диплом" HorizontalAlignment="Left" Margin="25,245,0,0" VerticalAlignment="Top" GroupName="DocumentType"/>
+
+            <!-- Серия и номер -->
+            <Label Content="Серия и номер документа об образовании:" HorizontalAlignment="Left" Margin="0,280,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtDocumentNumber" Height="24" Margin="0,305,150,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <!-- Средний балл -->
+            <Label Content="Средний балл (до сотых):" HorizontalAlignment="Left" Margin="0,335,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtAverageScore" Height="24" Margin="0,360,150,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+            <!-- Загрузка файлов -->
+            <TextBlock Text="Прикрепите сканы страниц документа об образовании с Ф.И.О., наименованием образовательной организации и оценками" 
+                      HorizontalAlignment="Left" Margin="0,395,0,0" VerticalAlignment="Top" TextWrapping="Wrap" Width="600"/>
+            <TextBlock Text="(Формат документов должен быть PNG, JPEG или PDF, а максимальный размер каждого файла 5 МБ)" 
+                      HorizontalAlignment="Left" Margin="0,420,0,0" VerticalAlignment="Top" FontSize="10" Foreground="Gray" TextWrapping="Wrap" Width="600"/>
+
+            <Button x:Name="btnSelectFiles" Content="Выбрать ..." HorizontalAlignment="Left" Margin="0,450,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="BtnSelectFiles_Click"/>
+
+            <!-- Кнопка продолжить -->
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
+        </Grid>
+    </Grid>
+</Page>
