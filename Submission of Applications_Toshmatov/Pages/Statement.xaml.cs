@@ -13,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Submission_of_Applications_Toshmatov
+namespace Submission_of_Applications_Toshmatov.Pages
 {
-
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для Statement.xaml
+    /// </summary>
+    public partial class Statement : Page
     {
-        public MainWindow()
+        public Statement()
         {
             InitializeComponent();
-            // Здесь можно использовать frame для навигации
-            // frame.Navigate(new YourPage());
         }
     }
 }
