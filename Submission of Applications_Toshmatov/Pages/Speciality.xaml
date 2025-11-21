@@ -8,19 +8,16 @@
       Title="Speciality">
 
     <Grid Background="#F8F9FA">
-        <!-- Шапка -->
         <Grid Margin="0,0,0,550" Background="White" Height="80">
             <Image HorizontalAlignment="Left" Height="69" Margin="10,-26,0,0" VerticalAlignment="Top" Width="69" Source="E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\Pages\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="84,-17,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="84,3,0,0" VerticalAlignment="Top" FontSize="12"/>
         </Grid>
 
-        <!-- Основной контент -->
         <Grid Margin="10,90,10,10">
-            <!-- Заголовок Специальность -->
+    
             <Label Content="Специальность" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
 
-            <!-- Выбор специальности -->
             <Label Content="Выберите специальность, на которой желаете учиться:" 
                    HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
 
