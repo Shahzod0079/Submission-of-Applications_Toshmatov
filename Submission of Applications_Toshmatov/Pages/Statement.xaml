@@ -4,9 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Toshmatov.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="410" d:DesignWidth="792"
-      Title="Statement">
+      mc:Ignorable="d" d:DesignWidth="792"
+      Title="Statement" Height="510">
 
     <Grid Background="#F8F9FA">
         <Grid Margin="0,0,0,349" Background="White">
@@ -29,7 +28,7 @@
             <TextBox Height="24" Margin="12,252,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
             <Label Content="Год окончания образовательной организации" HorizontalAlignment="Left" Margin="12,281,0,0" VerticalAlignment="Top"/>
             <TextBox Height="24" Margin="12,306,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,79" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
         </Grid>
     </Grid>
 </Page>

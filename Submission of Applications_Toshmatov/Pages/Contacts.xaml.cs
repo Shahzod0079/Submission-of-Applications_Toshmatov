@@ -24,5 +24,11 @@ namespace Submission_of_Applications_Toshmatov.Pages
         {
             InitializeComponent();
         }
+        private void Continue_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Parents());
+            
+
+        }
     }
 }

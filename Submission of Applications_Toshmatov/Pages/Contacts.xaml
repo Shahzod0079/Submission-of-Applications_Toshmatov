@@ -8,33 +8,21 @@
       Title="Contacts">
 
     <Grid Background="#F8F9FA">
-        <!-- Шапка -->
         <Grid Margin="0,0,0,400" Background="White" Height="80">
             <Image HorizontalAlignment="Left" Height="69" Margin="10,0,0,0" VerticalAlignment="Center" Width="69" Source="E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\Pages\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="90,2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="90,31,0,0" VerticalAlignment="Top" FontSize="12"/>
         </Grid>
-
-        <!-- Основной контент -->
         <Grid Margin="10,90,10,10">
-            <!-- Заголовок Контакты -->
             <Label Content="Контакты" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-
-            <!-- Домашний номер -->
             <Label Content="Домашний номер:" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtHomePhone" Height="24" Margin="10,66,525,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
 
-            <!-- Мобильный номер -->
             <Label Content="Мобильный номер:" HorizontalAlignment="Left" Margin="321,40,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtMobilePhone" Height="24" Margin="321,66,178,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-
-            <!-- Электронный адрес -->
             <Label Content="Электронный адрес:" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtEmail" Height="24" Margin="0,175,178,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-
-            <!-- Кнопка Продолжить -->
-            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,0,10" VerticalAlignment="Bottom" 
-                    Width="150" Height="30"/>
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,79" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
         </Grid>
     </Grid>
 </Page>

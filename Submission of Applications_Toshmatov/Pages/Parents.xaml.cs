@@ -23,6 +23,12 @@ namespace Submission_of_Applications_Toshmatov.Pages
         public Parents()
         {
             InitializeComponent();
+
+        }
+        private void Continue_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Заявление успешно отправлено!", "Успех");
         }
     }
 }
+

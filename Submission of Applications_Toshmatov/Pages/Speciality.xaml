@@ -57,8 +57,7 @@
             <CheckBox Content="С датой представления оригиналов документов ознакомлен(а)" 
                      HorizontalAlignment="Left" Margin="0,494,0,0" VerticalAlignment="Top"/>
 
-            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,0,10" VerticalAlignment="Bottom" 
-                    Width="150" Height="30"/>
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,79" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
         </Grid>
     </Grid>
 </Page>

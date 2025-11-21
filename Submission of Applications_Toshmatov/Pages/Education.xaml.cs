@@ -62,8 +62,7 @@ namespace Submission_of_Applications_Toshmatov.Pages
                 return;
             }
 
-            // Переход на следующую страницу
-            NavigationService?.Navigate(new Statement());
+            NavigationService?.Navigate(new Status());
         }
     }
 }

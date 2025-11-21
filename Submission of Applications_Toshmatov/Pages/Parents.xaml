@@ -1,14 +1,102 @@
 ﻿<Page x:Class="Submission_of_Applications_Toshmatov.Pages.Parents"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Submission_of_Applications_Toshmatov.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="800" d:DesignWidth="800"
       Title="Parents">
 
-    <Grid>
-        
+    <Grid Background="#F8F9FA" Margin="0,0,0,-350">
+        <!-- Шапка -->
+        <Grid Margin="0,0,0,650" Background="White" Height="80">
+            <Image HorizontalAlignment="Left" Height="91" Margin="15,-201,0,0" VerticalAlignment="Top" Width="78" Source="E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\Pages\Логотип_Пермский_авиационный_техникум.png"/>
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="93,-198,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="93,-165,0,0" VerticalAlignment="Top" FontSize="12"/>
+        </Grid>
+
+        <!-- Основной контент -->
+        <Grid Margin="10,90,10,10">
+            <!-- Заголовок -->
+            <Label Content="Сведения о родителях (законных представителях):" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+
+            <!-- Примечание -->
+            <Label Content="Если родитель один, заполнить данные на одного родителя" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="10" Foreground="Red"/>
+
+            <!-- Мать -->
+            <Label Content="Мать (или законный представитель):" HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+
+            <Label Content="Фамилия, имя, отчество (полностью)" HorizontalAlignment="Left" Margin="20,85,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtMotherFullName" Height="24" Margin="10,110,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtMotherBirthDate" Height="24" Margin="10,165,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Место работы:" HorizontalAlignment="Left" Margin="20,195,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtMotherWorkPlace" Height="24" Margin="10,220,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Должность:" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtMotherPosition" Height="24" Margin="10,275,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Место жительства:" HorizontalAlignment="Left" Margin="20,305,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtMotherAddress" Height="24" Margin="10,330,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <!-- Телефоны матери -->
+            <StackPanel Orientation="Horizontal" Margin="20,360,0,0">
+                <StackPanel>
+                    <Label Content="Домашний телефон:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="(при наличии)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="9" Foreground="red"/>
+                    <TextBox x:Name="txtMotherHomePhone" Height="24" Width="150" TextWrapping="Wrap" Text="" Margin="0,5,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="20,0,0,0">
+                    <Label Content="Мобильный телефон:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="(при наличии)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="9" Foreground="red"/>
+                    <TextBox x:Name="txtMotherMobilePhone" Height="24" Width="150" TextWrapping="Wrap" Text="" Margin="0,5,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Чекбокс матери -->
+            <CheckBox x:Name="cbMotherConsent" Content="Настоящим подтверждаю, что персональные данные на третью" 
+                     HorizontalAlignment="Left" Margin="20,450,0,0" VerticalAlignment="Top" Width="400"/>
+
+            <!-- Отец -->
+            <Label Content="Отец (или законный представитель):" HorizontalAlignment="Left" Margin="0,470,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+
+            <Label Content="Фамилия, имя, отчество (полностью)" HorizontalAlignment="Left" Margin="20,495,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFatherFullName" Height="24" Margin="20,520,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="20,550,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFatherBirthDate" Height="24" Margin="10,575,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Место работы:" HorizontalAlignment="Left" Margin="20,605,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFatherWorkPlace" Height="24" Margin="10,630,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Должность:" HorizontalAlignment="Left" Margin="20,660,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFatherPosition" Height="24" Margin="10,685,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <Label Content="Место жительства:" HorizontalAlignment="Left" Margin="20,715,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFatherAddress" Height="24" Margin="10,740,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+            <!-- Телефоны отца -->
+            <StackPanel Orientation="Horizontal" Margin="20,770,0,0">
+                <StackPanel>
+                    <Label Content="Домашний телефон:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="(при наличии)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="9" Foreground="red"/>
+                    <TextBox x:Name="txtFatherHomePhone" Height="24" Width="150" TextWrapping="Wrap" Text="" Margin="0,5,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="20,0,0,0">
+                    <Label Content="Мобильный телефон:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Label Content="(при наличии)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="9" Foreground="red"/>
+                    <TextBox x:Name="txtFatherMobilePhone" Height="24" Width="150" TextWrapping="Wrap" Text="" Margin="0,5,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Чекбокс отца -->
+            <CheckBox x:Name="cbFatherConsent" Content="Настоящим подтверждаю, что персональные данные на третью" 
+                     HorizontalAlignment="Left" Margin="20,854,0,0" VerticalAlignment="Top" Width="400"/>
+
+            <!-- Кнопка Продолжить -->
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,79" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
+        </Grid>
     </Grid>
 </Page>

@@ -24,13 +24,11 @@ namespace Submission_of_Applications_Toshmatov.Pages
 
         private void RbHaveMilitary_Checked(object sender, RoutedEventArgs e)
         {
-            // Показываем блок загрузки файлов при выборе "имею"
             fileUploadPanel.Visibility = Visibility.Visible;
         }
 
         private void RbNoMilitary_Checked(object sender, RoutedEventArgs e)
         {
-            // Скрываем блок загрузки файлов при выборе "не имею"
             fileUploadPanel.Visibility = Visibility.Collapsed;
         }
 
@@ -45,25 +43,21 @@ namespace Submission_of_Applications_Toshmatov.Pages
 
             if (openFileDialog.ShowDialog() == true)
             {
-                // Обработка выбранных файлов
                 MessageBox.Show($"Выбрано файлов: {openFileDialog.FileNames.Length}", "Файлы выбраны");
-                // Здесь можно добавить логику для отображения выбранных файлов
             }
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-            // Проверка: если выбрано "имею", но файлы не загружены
             if (rbHaveMilitary.IsChecked == true && fileUploadPanel.Visibility == Visibility.Visible)
             {
-                // Можно добавить проверку, что файлы действительно выбраны
                 MessageBox.Show("Пожалуйста, прикрепите сканы документов", "Внимание");
                 return;
             }
 
-            // Переход на следующую страницу или сохранение данных
             MessageBox.Show("Данные статуса сохранены", "Успешно");
-            // NavigationService?.Navigate(new NextPage());
+
+            NavigationService?.Navigate(new Speciality());
         }
     }
 }
