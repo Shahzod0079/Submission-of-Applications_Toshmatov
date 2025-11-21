@@ -22,7 +22,7 @@ namespace Submission_of_Applications_Toshmatov
         {
             InitializeComponent();
 
-            frame.Navigate(new Pages.Statement());
+            frame.Navigate(new Pages.Education());
         }
 
         public enum PageType

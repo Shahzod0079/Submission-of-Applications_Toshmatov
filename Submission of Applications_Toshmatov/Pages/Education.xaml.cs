@@ -36,14 +36,14 @@ namespace Submission_of_Applications_Toshmatov.Pages
 
             if (openFileDialog.ShowDialog() == true)
             {
-                // Обработка выбранных файлов
+
                 MessageBox.Show($"Выбрано файлов: {openFileDialog.FileNames.Length}", "Файлы выбраны");
             }
         }
 
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-            // Проверка заполнения полей
+
             if (!rb9Class.IsChecked.Value && !rb11Class.IsChecked.Value && !rbSPO.IsChecked.Value && !rbVPO.IsChecked.Value)
             {
                 MessageBox.Show("Выберите базу образования", "Ошибка");

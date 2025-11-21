@@ -17,3 +17,5 @@ E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Submission of Applications_Toshmatov.pdb
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Education.baml
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Education.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Status.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Status.g.cs

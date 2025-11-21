@@ -1,0 +1,59 @@
+﻿<Page x:Class="Submission_of_Applications_Toshmatov.Pages.Status"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Status">
+
+    <Grid Background="#F8F9FA">
+        <!-- Шапка -->
+        <Grid Margin="0,0,0,500" Background="White">
+            <Image HorizontalAlignment="Left" Height="93" Margin="16,14,0,0" VerticalAlignment="Top" Width="71" Source="E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\Pages\Логотип_Пермский_авиационный_техникум.png"/>
+            <TextBlock Text="Электронная приемная компания" HorizontalAlignment="Left" Margin="110,14,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+            <TextBlock Text="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Center" FontSize="12"/>
+        </Grid>
+
+        <!-- Основной контент -->
+        <Grid Margin="10,100,10,10">
+            <TextBlock Text="Статус" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+
+            <!-- Имею статус -->
+            <TextBlock Text="Имею статус:" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+
+            <CheckBox x:Name="cbOrphan" Content="ребенок-сирота/ребенок, оставшийся без попечения родителей" HorizontalAlignment="Left" Margin="20,65,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="cbDisabled" Content="инвалид" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="cbLowIncome" Content="малообеспеченный" HorizontalAlignment="Left" Margin="20,115,0,0" VerticalAlignment="Top"/>
+
+            <!-- Приписное удостоверение -->
+            <TextBlock Text="Приписное удостоверение (военный билет)" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+            <TextBlock Text="Выберите один из вариантов:" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" FontSize="10" Foreground="Red"/>
+
+            <RadioButton x:Name="rbHaveMilitary" Content="имею (при нажатии данной кнопки необходимо ниже прикрепить сканы страниц документа)" 
+                        HorizontalAlignment="Left" Margin="25,200,0,0" VerticalAlignment="Top" GroupName="MilitaryDoc" Checked="RbHaveMilitary_Checked"/>
+            <RadioButton x:Name="rbNoMilitary" Content="не имею" 
+                        HorizontalAlignment="Left" Margin="25,225,0,0" VerticalAlignment="Top" GroupName="MilitaryDoc" Checked="RbNoMilitary_Checked"/>
+
+            <!-- Блок для загрузки файлов (изначально скрыт) -->
+            <StackPanel x:Name="fileUploadPanel" Margin="0,260,0,0" Visibility="Collapsed">
+                <TextBlock Text="Прикрепите сканы 1-ой и 2-ой страниц приписного удостоверения или военного билета (стр. 1-5, 8-13, 20-21) при их наличии" 
+                          HorizontalAlignment="Left" TextWrapping="Wrap" Width="600"/>
+                <TextBlock Text="(Формат документов должен быть PNG, JPEG или PDF, а максимальный размер каждого файла 5 МБ)" 
+                          HorizontalAlignment="Left" FontSize="10" Foreground="Gray" TextWrapping="Wrap" Width="600" Margin="0,5,0,10"/>
+
+                <Button x:Name="btnSelectMilitaryFiles" Content="Выбрать..." HorizontalAlignment="Left" Width="100" Height="25" Click="BtnSelectMilitaryFiles_Click"/>
+            </StackPanel>
+
+            <TextBlock Text="Прикрепите сканы 1-ой и 2-ой страниц припиного удостоворения или военного билета (стр. 1-5,8-13,20-21) при ихи наличи" 
+                      HorizontalAlignment="Left" Margin="0,262,0,0" VerticalAlignment="Top" TextWrapping="Wrap" Width="600"/>
+            <TextBlock Text="(Формат документов должен быть PNG, JPEG или PDF, а максимальный размер каждого файла 5 МБ)" 
+                      HorizontalAlignment="Left" Margin="0,299,0,0" VerticalAlignment="Top" FontSize="10" Foreground="red" TextWrapping="Wrap" Width="600"/>
+
+            <Button x:Name="btnSelectFiles" Content="Выбрать ..." HorizontalAlignment="Left" Margin="660,338,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+            <TextBox x:Name="txtDocumentNumberr" Height="24" Margin="5,338,198,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <!-- Кнопка продолжить -->
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,79" VerticalAlignment="Bottom" Width="150" Height="30" Click="Continue_Click"/>
+        </Grid>
+    </Grid>
+</Page>
