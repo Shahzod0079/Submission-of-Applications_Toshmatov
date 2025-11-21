@@ -19,3 +19,11 @@ E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Education.g.cs
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Status.baml
 E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Status.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Speciality.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Contacts.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Parents.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Passport.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Speciality.g.cs
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Contacts.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Parents.baml
+E:\Submission of Applications_Toshmatov\Submission of Applications_Toshmatov\obj\Debug\Pages\Passport.baml

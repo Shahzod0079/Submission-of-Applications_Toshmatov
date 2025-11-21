@@ -27,15 +27,24 @@ namespace Submission_of_Applications_Toshmatov
 
         public enum PageType
         {
-            Statement
+            Education,
+            Statement,
+            Status,
+   
         }
 
         public void OpenPages(PageType page)
         {
             switch (page)
             {
+                case PageType.Education:
+                    frame.Navigate(new Pages.Education());
+                    break;
                 case PageType.Statement:
                     frame.Navigate(new Pages.Statement());
+                    break;
+                case PageType.Status:
+                    frame.Navigate(new Pages.Status());
                     break;
             }
         }
